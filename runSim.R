@@ -47,14 +47,6 @@ tra[3,2] <-TRUE
 tra
 
 
-###call HAPNK1 corr matrix
-r1 <- c(1,	-0.1822128,	0.5,	0,	0.5694575)
-r2 <- c(-0.1822128,	1,	0,	0.7,	-0.3373307)
-r3 <- c(0.5,	0,	1,	-0.1822128,	0.5694575)
-r4 <- c(0,	0.7,	-0.1822128,	1,	-0.3373307)
-r5 <- c(0.5694575,	-0.3373307,	0.5694575,	-0.3373307,	1)
-HAPNK1corr <- rbind(r1,r2,r3,r4,r5)
-
 
 ### make hypothetical matrices for simulations
 colCG1 <- c(1,-0.2,0.1,-0.1,0.5)
@@ -135,4 +127,5 @@ write.csv(SimOut[[5]],
 write.csv(SimOut[[6]],
           file=paste("/SimOutput/EstimatesCGRFS",ThisJob$Var1,ThisJob$Var3,ThisJob$Var2,ThisJob$Var6,ThisJob$Var7,".csv",sep = "_"),
           row.names = TRUE)
+
 
